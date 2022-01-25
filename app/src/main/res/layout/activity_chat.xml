@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/chat_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        tools:listitem="@layout/item_message_received">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+
+        <com.dewarder.holdinglibrary.HoldingButtonLayout
+
+            android:id="@+id/voice_message"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:hbl_cancel_color="#E62A5E"
+            app:hbl_direction="end"
+
+            android:layout_marginStart="16dp"
+            app:hbl_cancel_icon="@mipmap/cancel"
+            app:hbl_color="@color/colorPrimary"
+            app:hbl_icon="@mipmap/voice_message"
+            app:hbl_radius="40dp"
+            app:hbl_holding_view="@+id/start_record"
+            app:hbl_second_radius="8dp">
+
+
+            <ImageView
+                android:id="@+id/start_record"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:tint="#979797"
+                android:layout_gravity="center"
+                android:src="@drawable/mic" />
+        </com.dewarder.holdinglibrary.HoldingButtonLayout>
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:onClick="sendImage"
+            android:src="@drawable/image"
+            app:tint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/inputET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+
+            android:hint="....."
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_gravity="center"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:tint="@color/colorPrimary"
+            android:src="@drawable/send" />
+    </LinearLayout>
+
+</RelativeLayout>

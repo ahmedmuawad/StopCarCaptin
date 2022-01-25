@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+android:paddingEnd="10dp"
+android:gravity="end"
+    android:paddingStart="10dp"
+    android:paddingTop="10dp"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/single_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+         app:srcCompat="@drawable/people" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+ android:layout_toEndOf="@id/single_image"
+
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#FF9800"
+        app:cardCornerRadius="15dp"
+      >
+
+        <me.jagar.chatvoiceplayerlibrary.VoicePlayerView
+            android:id="@+id/voicePlayerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:enableVisualizer="true"
+            android:visibility="gone"
+            app:visualizationPlayedColor="@color/white"
+            app:visualizationNotPlayedColor="#000"
+            app:playPauseBackgroundColor="#FF9800"
+
+            app:seekBarProgressColor="#000"
+            app:showShareButton="false"
+
+            app:playPauseCornerRadius="100"
+            app:showTiming="true"
+            app:viewCornerRadius="100"
+            app:viewBackground="#FF9800"
+            app:progressTimeColor="@color/white"
+            app:seekBarThumbColor="@color/white"
+
+            app:playProgressbarColor="@color/white"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/image"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:text="sent_message"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

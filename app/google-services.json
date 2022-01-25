@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "328814653879",
+    "firebase_url": "https://stopgroup-default-rtdb.firebaseio.com",
+    "project_id": "stopgroup",
+    "storage_bucket": "stopgroup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328814653879:android:d7ce1688422e096cdcb832",
+        "android_client_info": {
+          "package_name": "com.stopgroup.stopcar.captain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328814653879-n2h27nd7st3t1nqp8f366u6cb613lneq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stopgroup.stopcar.captain",
+            "certificate_hash": "2cb2ce66e2e2401379345041032e84a6314f5e6b"
+          }
+        },
+        {
+          "client_id": "328814653879-k7khuubf04apvtgqt5ce5k90jsknrdos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsmwJhF6tOVQbcJjSpf2rlevLm64FT6FQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328814653879-k7khuubf04apvtgqt5ce5k90jsknrdos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

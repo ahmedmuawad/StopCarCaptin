@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TodayFragment">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:padding="25dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/shadow"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="16dp">
+
+
+                <TextView
+                    android:id="@+id/price"
+                    style="@style/LargeText"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    style="@style/SmallText"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/my_earning"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:padding="25dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/shadow"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="16dp">
+
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/LargeText"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    style="@style/SmallText"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/spend_time"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="25dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/shadow"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="16dp">
+
+
+                <TextView
+                    android:text="00"
+                    android:id="@+id/num"
+                    style="@style/LargeText"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    android:text="@string/completed_trip"
+                    style="@style/SmallText"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/lin1"
+            android:weightSum="3"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:padding="25dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/shadow"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="16dp">
+
+
+                <TextView
+                    android:id="@+id/nashmiPrice"
+                    style="@style/LargeText"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    android:text="@string/nashmi_cash"
+                    style="@style/SmallText"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="25dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/shadow"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="16dp">
+
+
+                <TextView
+                    android:id="@+id/myPrice"
+                    android:text="0"
+                    style="@style/LargeText"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    android:text="@string/my_cash"
+                    style="@style/SmallText"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:padding="25dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/shadow"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingTop="16dp">
+
+
+                <TextView
+                    android:text="0"
+                    style="@style/LargeText"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    android:text="@string/completed_trip"
+                    style="@style/SmallText"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/title"
+            style="@style/MediumText"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/fofo11"
+            android:text="@string/today_trip"
+            android:textAllCaps="true"
+            android:textColor="@color/graydark" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_weight="1"
+            android:id="@+id/trips_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

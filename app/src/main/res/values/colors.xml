@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1671b8</color>
+    <color name="colorPrimaryDark">#003660</color>
+    <color name="colorAccent">#1671b8</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#1671b8</color>
+    <color name="cardview">#003660</color>
+    <color name="gray">#E1E3E4</color>
+    <color name="graydark">#999a9b</color>
+    <color name="lightgray">#F0F5F8</color>
+    <color name="green">#5EC62B</color>
+    <color name="black">#003660</color>
+    <color name="received_color">#e9ebee</color>
+</resources>
